@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collection of cheatsheets that offer a quick reference for essential terminal commands, covering popular usage for system management, file manipulation, networking, and text processing. It includes commands like awk, sed, grep, curl, and tar, providing a concise guide for both beginners and experienced users.">
+    <title>Terminal Commands Cheatsheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>TERMINAL COMMANDS</h1>
+            <p class="subtitle">Your curated collection of essential command-line tools</p>
+        </header>
+        
+        <div class="terminal-prompt blinking-cursor">Welcome to the command center</div>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search commands..." autocomplete="off">
+        </div>
+        
+        <div class="commands-grid" id="commandsGrid">
+            <!-- Commands will be loaded dynamically from commands.json -->
+        </div>
+        
+        <div class="loading" id="loading">
+            <p>Loading commands<span class="blinking-cursor"></span></p>
+        </div>
+        
+        <div class="no-results" id="noResults" style="display: none;">
+            No commands found matching your search...
+        </div>
+        
+        <div class="stats" id="stats">
+            <span id="commandCount">8</span> commands available
+        </div>
+        
+        <footer class="footer">
+            <p>Terminal Commands Cheatsheet | Built for command-line enthusiasts</p>
+        </footer>
+    </div>
+    
+     <script src="script.js"></script> 
+</body>
+</html>
